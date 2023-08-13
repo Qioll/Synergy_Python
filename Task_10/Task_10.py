@@ -1,38 +1,38 @@
-# -*- coding: cp1251 -*-
+# -*- coding: UTF_8 -*-
 
-print('Задание №1')
+print('Р—Р°РґР°РЅРёРµ в„–1')
 
 pets = {}
 
-pet_name = input("Введите имя питомца: ")
-pet_type = input("Введите вид питомца: ")
-pet_age = int(input("Введите возраст питомца: "))
-owner_name = input("Введите имя владельца: ")
+pet_name = input("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРёС‚РѕРјС†Р°: ")
+pet_type = input("Р’РІРµРґРёС‚Рµ РІРёРґ РїРёС‚РѕРјС†Р°: ")
+pet_age = int(input("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°: "))
+owner_name = input("Р’РІРµРґРёС‚Рµ РёРјСЏ РІР»Р°РґРµР»СЊС†Р°: ")
 
 pets[pet_name] = {
-    "Вид питомца": pet_type,
-    "Возраст питомца": pet_age,
-    "Имя владельца": owner_name
+    "Р’РёРґ РїРёС‚РѕРјС†Р°": pet_type,
+    "Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°": pet_age,
+    "РРјСЏ РІР»Р°РґРµР»СЊС†Р°": owner_name
 }
 
 for pet_name, pet in pets.items():
-    pet_type = pet["Вид питомца"]
-    pet_age = pet["Возраст питомца"]
-    owner_name = pet["Имя владельца"]
+    pet_type = pet["Р’РёРґ РїРёС‚РѕРјС†Р°"]
+    pet_age = pet["Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°"]
+    owner_name = pet["РРјСЏ РІР»Р°РґРµР»СЊС†Р°"]
 
     if pet_age % 10 == 1 and pet_age % 100 != 11:
-        age_word = "год"
+        age_word = "РіРѕРґ"
     elif 2 <= pet_age % 10 <= 4 and (pet_age % 100 < 10 or pet_age % 100 >= 20):
-        age_word = "года"
+        age_word = "РіРѕРґР°"
     else:
-        age_word = "лет"
+        age_word = "Р»РµС‚"
 
-print(f'Это {pet_type.lower()} по кличке "{pet_name}". Возраст питомца: {pet_age} {age_word}. Имя владельца: {owner_name}')
+print(f'Р­С‚Рѕ {pet_type.lower()} РїРѕ РєР»РёС‡РєРµ "{pet_name}". Р’РѕР·СЂР°СЃС‚ РїРёС‚РѕРјС†Р°: {pet_age} {age_word}. РРјСЏ РІР»Р°РґРµР»СЊС†Р°: {owner_name}')
 
-print('Задание №2')
+print('Р—Р°РґР°РЅРёРµ в„–2')
 
-start = int(input("Введите начальное значение: "))
-end = int(input("Введите конечное значение: "))
+start = int(input("Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: "))
+end = int(input("Р’РІРµРґРёС‚Рµ РєРѕРЅРµС‡РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: "))
 
 my_dict = {}
 
@@ -44,6 +44,6 @@ else:
 for i in range(start, end + step, step):
     my_dict[i] = i ** i
 
-print("Результат:")
+print("Р РµР·СѓР»СЊС‚Р°С‚:")
 for key, value in my_dict.items():
     print(key, ":", value)
