@@ -1,4 +1,4 @@
-# -*- coding: cp1251 -*-
+# -*- coding: UTF_8 -*-
 
 import random
 
@@ -23,18 +23,18 @@ for i in range(10):
         row.append(matrix1[i][j] + matrix2[i][j])
     matrix3.append(row)
 
-print("Первая матрица:")
+print("РџРµСЂРІР°СЏ РјР°С‚СЂРёС†Р°:")
 for row in matrix1:
     print(row)
 
 print("\n")
 
-print("Вторая матрица:")
+print("Р’С‚РѕСЂР°СЏ РјР°С‚СЂРёС†Р°:")
 for row in matrix2:
     print(row)
 
 print("\n")
 
-print("Третья матрица (сумма первой и второй матриц):")
+print("РўСЂРµС‚СЊСЏ РјР°С‚СЂРёС†Р° (СЃСѓРјРјР° РїРµСЂРІРѕР№ Рё РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†):")
 for row in matrix3:
     print(row)
