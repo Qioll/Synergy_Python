@@ -1,6 +1,6 @@
-# -*- coding: cp1251 -*-
+# -*- coding: UTF_8 -*-
 
-print('Задание №1')
+print('Р—Р°РґР°РЅРёРµ в„–1')
 
 class CashRegister:
     def __init__(self, money):
@@ -17,22 +17,22 @@ class CashRegister:
         if self.money >= amount:
             self.money -= amount
         else:
-            raise ValueError("Not enough money in the register")
+            raise ValueError("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі РІ РєР°СЃСЃРµ")
 
-register = CashRegister(5000) # создаем объект класса CashRegister с начальным количеством денег 5000
+register = CashRegister(5000) # СЃРѕР·РґР°РµРј РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР° CashRegister СЃ РЅР°С‡Р°Р»СЊРЅС‹Рј РєРѕР»РёС‡РµСЃС‚РІРѕРј РґРµРЅРµРі 5000
 
-print(register.count_1000()) # выводим количество целых тысяч в кассе (5)
+print(register.count_1000()) # РІС‹РІРѕРґРёРј РєРѕР»РёС‡РµСЃС‚РІРѕ С†РµР»С‹С… С‚С‹СЃСЏС‡ РІ РєР°СЃСЃРµ (5)
 
-register.top_up(2000) # пополняем кассу на 2000
+register.top_up(2000) # РїРѕРїРѕР»РЅСЏРµРј РєР°СЃСЃСѓ РЅР° 2000
 
-print(register.count_1000()) # выводим обновленное количество целых тысяч в кассе (7)
+print(register.count_1000()) # РІС‹РІРѕРґРёРј РѕР±РЅРѕРІР»РµРЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С†РµР»С‹С… С‚С‹СЃСЏС‡ РІ РєР°СЃСЃРµ (7)
 
-register.take_away(3000) # забираем из кассы 3000
+register.take_away(3000) # Р·Р°Р±РёСЂР°РµРј РёР· РєР°СЃСЃС‹ 3000
 
-print(register.count_1000()) # выводим обновленное количество целых тысяч в кассе (4)
+print(register.count_1000()) # РІС‹РІРѕРґРёРј РѕР±РЅРѕРІР»РµРЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С†РµР»С‹С… С‚С‹СЃСЏС‡ РІ РєР°СЃСЃРµ (4)
 
 
-print('Задание №2')
+print('Р—Р°РґР°РЅРёРµ в„–2')
 
 
 class Turtle:
@@ -60,7 +60,7 @@ class Turtle:
         if self.s > 1:
             self.s -= 1
         else:
-            raise ValueError("s не может быть меньше или равно 0")
+            raise ValueError("s РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ РёР»Рё СЂР°РІРЅРѕ 0")
 
     def count_moves(self, x2, y2):
         dx = abs(x2 - self.x)
@@ -68,7 +68,7 @@ class Turtle:
         if dx % self.s + dy % self.s == 0:
             return dx // self.s + dy // self.s
         print(
-            f"Точка ({x2}, {y2}) недостижима из точки ({self.x}, {self.y}) с шагом {self.s}"
+            f"РўРѕС‡РєР° ({x2}, {y2}) РЅРµРґРѕСЃС‚РёР¶РёРјР° РёР· С‚РѕС‡РєРё ({self.x}, {self.y}) СЃ С€Р°РіРѕРј {self.s}"
         )
         return None
 
