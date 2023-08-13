@@ -1,28 +1,28 @@
-# -*- coding: cp1251 -*-
+# -*- coding: UTF_8 -*-
 
-print("Задание №1")
+print("Р—Р°РґР°РЅРёРµ в„–1")
 
-number = int(input("Введите число: "))
+number = int(input("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "))
 
 description = ""
 if number < 0:
-    description = "отрицательное"
+    description = "РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ"
 elif number == 0:
-    description = "нулевое"
+    description = "РЅСѓР»РµРІРѕРµ"
 else:
-    description = "положительное"
+    description = "РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ"
 
 if number % 2 == 0:
-    description += " четное"
+    description += " С‡РµС‚РЅРѕРµ"
 else:
-    description += " нечетное"
-    print("Число не является четным")
+    description += " РЅРµС‡РµС‚РЅРѕРµ"
+    print("Р§РёСЃР»Рѕ РЅРµ СЏРІР»СЏРµС‚СЃСЏ С‡РµС‚РЅС‹Рј")
 
-print(f"{description} число")
+print(f"{description} С‡РёСЃР»Рѕ")
 
-print('Задание №2')
+print('Р—Р°РґР°РЅРёРµ в„–2')
 
-word = input("Введите слово: ")
+word = input("Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ: ")
 vowels = {'a', 'e', 'i', 'o', 'u'}
 
 letter_count = {}
@@ -38,7 +38,7 @@ for letter in word:
 vowel_count = 0
 consonant_count = 0
 
-print("Гласные:")
+print("Р“Р»Р°СЃРЅС‹Рµ:")
 for vowel in vowels:
     if vowel in letter_count:
         vowel_count += letter_count[vowel]
@@ -46,23 +46,23 @@ for vowel in vowels:
     else:
         print(vowel, ": False")
 
-print("Согласные:")
+print("РЎРѕРіР»Р°СЃРЅС‹Рµ:")
 for letter in letter_count:
     if letter not in vowels:
         consonant_count += letter_count[letter]
         print(letter, ":", letter_count[letter])
 
 if vowel_count > 0 and consonant_count > 0:
-    print("Количество гласных:", vowel_count)
-    print("Количество согласных:", consonant_count)
+    print("РљРѕР»РёС‡РµСЃС‚РІРѕ РіР»Р°СЃРЅС‹С…:", vowel_count)
+    print("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕРіР»Р°СЃРЅС‹С…:", consonant_count)
 else:
     print(False)
 
-print('Задание №3')
+print('Р—Р°РґР°РЅРёРµ в„–3')
 
-X = int(input("Введите минимальную сумму инвестиций: "))
-A = int(input("Введите сумму денег у Майкла: "))
-B = int(input("Введите сумму денег у Ивана: "))
+X = int(input("Р’РІРµРґРёС‚Рµ РјРёРЅРёРјР°Р»СЊРЅСѓСЋ СЃСѓРјРјСѓ РёРЅРІРµСЃС‚РёС†РёР№: "))
+A = int(input("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РґРµРЅРµРі Сѓ РњР°Р№РєР»Р°: "))
+B = int(input("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РґРµРЅРµРі Сѓ РРІР°РЅР°: "))
 
 if A >= X and B >= X:
     print(2)
