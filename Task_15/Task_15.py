@@ -1,6 +1,6 @@
-# -*- coding: cp1251 -*-
+# -*- coding: UTF_8 -*-
 
-print('Задание №1')
+print('Р—Р°РґР°РЅРёРµ в„–1')
 
 class Transport:
     def __init__(self, name, max_speed, mileage):
@@ -13,9 +13,9 @@ class Autobus(Transport):
         super().__init__(name, max_speed, mileage)
 
 autobus = Autobus("Renaul Logan", 180, 12)
-print("Название автомобиля:", autobus.name, "Скорость:", autobus.max_speed, "Пробег:", autobus.mileage)
+print("РќР°Р·РІР°РЅРёРµ Р°РІС‚РѕРјРѕР±РёР»СЏ:", autobus.name, "РЎРєРѕСЂРѕСЃС‚СЊ:", autobus.max_speed, "РџСЂРѕР±РµРі:", autobus.mileage)
 
-print('Задание №2')
+print('Р—Р°РґР°РЅРёРµ в„–2')
 
 class Transport_new:
     def __init__(self, name, max_speed, mileage):
@@ -24,10 +24,10 @@ class Transport_new:
         self.mileage = mileage
 
     def __str__(self) -> str:
-        return f"Название автомобиля: {self.name} Скорость: {self.max_speed} Пробег: {self.mileage}"
+        return f"РќР°Р·РІР°РЅРёРµ Р°РІС‚РѕРјРѕР±РёР»СЏ: {self.name} РЎРєРѕСЂРѕСЃС‚СЊ: {self.max_speed} РџСЂРѕР±РµРі: {self.mileage}"
 
     def seating_capacity(self, capacity):
-        return f"Вместимость одного автобуса {self.name}: {capacity} пассажиров"
+        return f"Р’РјРµСЃС‚РёРјРѕСЃС‚СЊ РѕРґРЅРѕРіРѕ Р°РІС‚РѕР±СѓСЃР° {self.name}: {capacity} РїР°СЃСЃР°Р¶РёСЂРѕРІ"
 
 
 class Autobus_new(Transport_new):
