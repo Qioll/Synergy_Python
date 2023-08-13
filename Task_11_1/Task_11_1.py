@@ -1,4 +1,4 @@
-# -*- coding: cp1251 -*-
+# -*- coding: UTF_8 -*-
 
 def factorial(n):
     result = 1
@@ -14,7 +14,7 @@ def factorial_list(f):
     return result
 
 
-n = int(input('Введите число: '))
+n = int(input('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: '))
 f = factorial(n)
-print(f'Факториал {n} равен {f}')
+print(f'Р¤Р°РєС‚РѕСЂРёР°Р» {n} СЂР°РІРµРЅ {f}')
 print(factorial_list(f))
